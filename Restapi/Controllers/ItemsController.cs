@@ -10,11 +10,11 @@ namespace Restapi.Controllers
     [Route("[controller]")] // this should be "items"
     public class ItemsController : ControllerBase
     {
-        private readonly InMemItemsRepository repository; // Just for the test
+        private readonly IItemsRepository repository; // Just for the test
 
-        public ItemsController()
+        public ItemsController(IItemsRepository repository)
         {
-            repository = new InMemItemsRepository();
+            this.repository = repository;
         }
 
         [HttpGet]
