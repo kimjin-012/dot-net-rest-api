@@ -8,11 +8,12 @@ Hello! to my REST Api build using .NET with C#!
 <br/>
 <img src="https://miro.medium.com/max/1200/1*LJsJxHgRQeuGvBgTacBWag.png" alt=".NET REST Api logo" width="400"/>
 
-I have developed a Full-Stack scale of application using .NET Core before. But his time I build the REST api version using..
+I have developed a Full-Stack scale of application using .NET Core before. But this time I build the REST api version using..
 ```
 dotnet new webapi -n Project_Name
 ```
 Which will create a base webapi structure and I will use <a href="https://swagger.io/">Swagger</a> to test/use the build.
+This will be another great chance to explore different dotnet template
 
 ### Built with
 * C#
