@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Restapi.Dtos;
 using Restapi.Models;
 using Restapi.Repositories;
 
@@ -18,9 +20,14 @@ namespace Restapi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Item> GetItmes()
+        public IEnumerable<ItemDto> GetItmes()
         {
-            var items = repository.GetItems();
+            var items = repository.GetItems().Select(i => new ItemDto{
+                Id = i.Id,
+                Name = i.Name,
+                Price = i.Price,
+                CreatedDate = i.CreatedDate
+            });
             return items;
         }
 
@@ -28,6 +35,7 @@ namespace Restapi.Controllers
         Now the route here will be
         GET /items/{id}
         */
+
         [HttpGet("{id}")]
         public ActionResult<Item> GetItem(Guid id)
         {
