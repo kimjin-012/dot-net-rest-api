@@ -21,4 +21,4 @@ This will be another great chance to explore different dotnet template
 * Swagger
 
 ## Contact / About Me
-Jin Kim - [Github](https://github.com/kimjin-012) - [LinkedIn](https://www.linkedin.com/in/jin-kim-code/) - [Portfolio](http://jinkim.tech/)
+Jin Kim - [Github](https://github.com/kimjin-012) - [LinkedIn](https://www.linkedin.com/in/jin-kim-code/)
